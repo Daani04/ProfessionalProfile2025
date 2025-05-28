@@ -1,0 +1,24 @@
+.navbar {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav.navbar {
+  position: absolute; 
+}
+
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #04843c;
+    margin-right: 40px;
+}
+
+.button-style {
+    background-color: #04843c;
+    padding: 10px;
+    width: 90px;
+    border-radius:7px;
+    text-align: center;
+}
+
