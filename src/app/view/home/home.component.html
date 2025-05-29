@@ -1,18 +1,57 @@
 <div class="gradient-background-general">
   <div class="translucid-container">
     <app-header></app-header>
-    <div id="cont-skills">
-      <div id="skills-cont-1">
-        <div id="skills-cont-2">
-          <img src="../../../../img/laptopSkills.png" alt="">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 col-md-6 d-flex flex-column">
+          <div id="cont-info">
+            <h1>WEB</h1>
+            <h1>DEVELOPER</h1>
+            <p>
+              Full stack web developer with a focus on frontend. Passionate about web 
+              development and functional design. I'm motivated by seeing how an idea can turn 
+              into something real and useful through code.
+            </p>
+            <button onclick="window.open('../../../../img/Curriculum2025.pdf')">See mi CV</button>
+          </div>
+          @if(displayWidth > 1499) {
+          <div id="profileContainer">
+            <div id="profileArrow">
+              <img src="../../../../img/arrow.png" alt="About me button">
+            </div>
+            <p>About me</p>
+          </div>
+          }
+        </div>
+
+        <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
+          <div id="cont-skills">
+            <div id="skills-cont-1">
+              <div id="skills-cont-2">
+                <img src="../../../../img/laptopSkills.png" alt="">
+              </div>
+            </div>
+            <span class="tech-name" style="--i: 0">HTML  <div class="skillDot-right skillDot-html"></div></span>
+            <span class="tech-name" style="--i: 1">CSS<div class="skillDot-right skillDot-css"></div></span>
+            <span class="tech-name" style="--i: 2">DOCKER<div class="skillDot-left skillDot-docker"></div></span>
+            <span class="tech-name" style="--i: 3">JS/TS<div class="skillDot-left skillDot-js"></div></span>
+            <span class="tech-name" style="--i: 4">PHP<div class="skillDot-left skillDot-php"></div></span>
+            <span class="tech-name" style="--i: 5">GIT<div class="skillDot-right skillDot-git"></div></span>
+          </div>
         </div>
       </div>
-      <span class="tech-name" style="--i: 0">HTML  <div class="skillDot-right skillDot-html"></div></span>
-      <span class="tech-name" style="--i: 1">CSS<div class="skillDot-right skillDot-css"></div></span>
-      <span class="tech-name" style="--i: 2">DOCKER<div class="skillDot-left skillDot-docker"></div></span>
-      <span class="tech-name" style="--i: 3">JS/TS<div class="skillDot-left skillDot-js"></div></span>
-      <span class="tech-name" style="--i: 4">PHP<div class="skillDot-left skillDot-php"></div></span>
-      <span class="tech-name" style="--i: 5">GIT<div class="skillDot-right skillDot-git"></div></span>
+      @if(displayWidth < 1499) {
+        <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div id="profileContainer">
+            <div id="profileArrow">
+              <img src="../../../../img/arrow.png" alt="About me button">
+            </div>
+            <p>About me</p>
+          </div>
+        </div>
+      </div>
+      }
     </div>
   </div>
-</div>
+</div>  

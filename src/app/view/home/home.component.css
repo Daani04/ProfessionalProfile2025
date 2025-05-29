@@ -1,12 +1,9 @@
 #cont-skills {
-  height: 100%;             
   display: flex;
-  align-items: center;      
-  justify-content: flex-end; 
-  padding-right: 150px;
-  position: relative; /*Revisar bien funcionamiento Posiblemente innecesario*/
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px; 
 }
-
 
 #skills-cont-1 {
   width: 450px;
@@ -31,8 +28,8 @@
 
 
 img {
-  width: 550px;
-  height: 550px;
+  max-width: 100%;
+  height: auto;
 }
 
 .tech-name {
@@ -90,3 +87,118 @@ img {
 .skillDot-js    { background-color: #F0DB4F; } 
 .skillDot-php   { background-color: #787CB5; }  
 .skillDot-git   { background-color: #F14E32; } 
+
+#cont-info {
+  padding: 20px;
+  margin-top: 120px;
+}
+
+h1{
+  font-family: 'Yeseva One', cursive;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: #04843c;
+  padding: 10px 20px;
+  width: auto;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(4, 132, 60, 0.4);
+}
+
+button:hover {
+  background-color: rgb(9, 161, 75);
+  box-shadow: 0 8px 15px rgba(9, 161, 75, 0.6);
+  transform: translateY(-3px);
+  color: white;
+}
+
+#profileContainer {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  margin-left: 15px; 
+}
+
+#profileContainer p {
+  margin: 0;
+}
+
+#profileArrow {
+  width: 40px;
+  height: 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#profileArrow img {
+  width: 40px;
+  height: 40px;
+}
+
+
+#profileArrow:hover img {
+  animation: dropAndLoop 0.8s ease-in-out forwards;
+}
+
+#profileArrow:hover {
+  animation: elasticStretch 0.4s ease;
+}
+
+@keyframes dropAndLoop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes elasticStretch {
+  0%   { transform: scaleY(1); }
+  40%  { transform: scaleY(1.15); }
+  70%  { transform: scaleY(0.9); }
+  100% { transform: scaleY(1); }
+}
+
+@media (max-width: 1499px) {
+    .col-12.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #cont-skills {
+    margin-top: 100px;
+  }
+
+  #profileContainer {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+}
+
+
+

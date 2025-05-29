@@ -9,4 +9,14 @@ import { HeaderComponent } from "../../component/header/header.component";
 })
 export class HomeComponent {
 
+  public displayWidth: number = 0;
+
+  ngOnInit() {
+    this.displayWidth = window.innerWidth;
+
+    setInterval(() => {
+      this.displayWidth = window.innerWidth;
+      console.log("Display width:", this.displayWidth);
+    },100);
+  }
 }
