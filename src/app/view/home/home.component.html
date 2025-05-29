@@ -15,7 +15,7 @@
             <button onclick="window.open('../../../../img/Curriculum2025.pdf')">See mi CV</button>
           </div>
           @if(displayWidth > 1499) {
-          <div id="profileContainer">
+          <div id="profileContainer" (click)="goToAboutMe()">
             <div id="profileArrow">
               <img src="../../../../img/arrow.png" alt="About me button">
             </div>
@@ -43,7 +43,7 @@
       @if(displayWidth < 1499) {
         <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
-          <div id="profileContainer">
+          <div id="profileContainer" (click)="goToAboutMe()">
             <div id="profileArrow">
               <img src="../../../../img/arrow.png" alt="About me button">
             </div>
