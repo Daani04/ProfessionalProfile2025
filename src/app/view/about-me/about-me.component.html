@@ -1,5 +1,37 @@
-<div class="gradient-background-general">
-  <div class="translucid-container">
-    
+<div class="gradient-background-aboutPage">
+  <div class="translucid-container-aboutPage">
+    <app-header></app-header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 first-col d-flex justify-content-center">
+          <div id="infoContainer">
+            <h1>ABOUT ME</h1>
+            <p>
+              I am a web developer with a background in IT systems. I hold a Technician degree 
+              in Microcomputer Systems and Networks (TSMR) as well as a Web Application Development 
+              (DAW) diploma. I consider myself a proactive person, eager to keep learning and growing 
+              professionally. Below, I outline some of the technologies and tools I have worked with.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h2>Technical knowledge</h2>
+          <div id="contTechnicalknowledge">
+            <div id="lineDown"></div>
+            @for (item of allItems; track $index) {
+            <div class="card" #cardElem
+                 [class.left-card]="item.position === 'left'"
+                 [class.right-card]="item.position === 'right'"
+                 [style.top.px]="$index * 300">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">{{item.key}}</h5>
+                  <p class="card-text">{{item.value}}</p>
+                </div>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>  

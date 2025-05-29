@@ -1,0 +1,135 @@
+h1, h2 {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+#infoContainer {
+    margin-top: 150px;
+    width: 800px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  margin-top: 0;
+  text-align: justify;
+  position: relative;
+}
+
+/* Punto de inicio del texto */
+.card-text::before {
+  content: "•";  
+  color: #555;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 0.5em;
+  position: relative;
+  top: 2px;
+}
+
+
+/*Estilos para las tecnologias*/
+#contTechnicalknowledge {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    height: 2100px;
+}
+
+#lineDown {
+    width: 10px;
+    height: 100%;
+    background-color: rgb(212, 201, 201);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.card {
+    position: absolute;
+    width: 500px;
+    height: 280px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.left-card {
+    right: 52%;
+    transform: translateX(-20px);
+}
+
+.left-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -26px; 
+  transform: translateY(-50%);
+  border-top: 26px solid transparent;   
+  border-bottom: 26px solid transparent;
+  border-left: 26px solid  rgba(183, 194, 215, 0.7); 
+}
+
+
+.right-card {
+    left: 52%;
+    transform: translateX(20px);
+}
+
+.right-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -26px;
+  transform: translateY(-50%);
+  border-top: 26px solid transparent;
+  border-bottom: 26px solid transparent;
+  border-right: 26px solid rgb(183, 194, 215, 0.7);
+}
+
+
+.cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-cards {
+    align-items: flex-end;
+}
+
+.right-cards {
+    align-items: flex-start;
+}
+
+/*Estilos para las cards, se activan cuando se visualizan*/
+.card.active {
+  box-shadow: 0 0 60px 20px rgba(180, 150, 255, 0.3);
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+
