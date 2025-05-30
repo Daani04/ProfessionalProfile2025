@@ -9,4 +9,9 @@ import { HeaderComponent } from "../../component/header/header.component";
 })
 export class ProjectsComponent {
 
+  public showProjectCard: string = "none";
+
+  public showHiddenCard(project: string): void{
+    this.showProjectCard = project;
+  }
 }

@@ -1,5 +1,5 @@
-<div class="gradient-background-general">
-  <div class="translucid-container">
+<div class="gradient-background-projects">
+  <div class="translucid-container-projects">
     <app-header></app-header>
 
     <div id="pagePresentation">
@@ -11,6 +11,205 @@
             new ways to solve problems, which has been key to my professional growth.
         </p>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">StockMaster</h5>
+                <div class="card-text">
+                <p>
+                    Mi último proyecto consiste en una web de gestión de productos, en la que los usuarios pueden tener diferentes 
+                    almacenes con sus respectivos productos. A partir de los datos almacenados, se generan gráficos automáticamente, 
+                    y gracias a la integración de inteligencia artificial es posible crear cualquier tipo de gráfico personalizado.
+                </p>
+                <p>
+                    Además, cuenta con un sistema de chat con IA que permite hacer preguntas sobre el funcionamiento de la web o consultar 
+                    información relacionada con los productos, como el stock disponible, el producto más caro, entre otros.
+                </p>
+                <p>
+                    Una de las funciones principales es el escáner, que permite añadir o retirar productos de los almacenes simplemente 
+                    escaneando su código de barras.
+                </p>
+                </div>
+                <button class="btn btn-primary" (click)="showHiddenCard('StockMaster')">Learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Alicia Estetica</h5>
+                <div class="card-text">
+                <p>
+                    Proyecto realizado de forma grupal, consiste en una web para una clínica estética. 
+                    Entre sus principales funciones destacan la tienda de productos, donde desde el lado del administrador se pueden ir añadiendo nuevos productos.
+                </p>
+                <p>
+                    También incluye un formulario de reserva que solo permite seleccionar días y horas disponibles. 
+                    Una vez que otro usuario ha reservado una cita con ese profesional en una fecha y hora determinada, esa franja deja de estar disponible.
+                </p>
+                <p>
+                    Por último, la página principal muestra todos los servicios que ofrece la clínica, organizados de forma clara y accesible para los usuarios.
+                </p>
+                </div>
+                <button class="btn btn-primary" (click)="showHiddenCard('AliciaEstetica')">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">EcoBuddy</h5>
+              <div class="card-text">
+                <p>
+                    Este proyecto fue realizado en grupo. Se trata de una red social cuyo objetivo es incentivar a las personas a realizar acciones positivas para el medio ambiente.
+                </p>
+                <p>
+                    Los usuarios pueden apuntarse a actividades como recogida de basura, plantación de árboles y muchas otras propuestas por la comunidad. Además, cuenta con un sistema de premios que motiva a seguir participando en estas actividades.
+                </p>
+                <p>
+                    El objetivo final de esta red social es fomentar este tipo de acciones y generar conciencia sobre la importancia de cuidar el medio ambiente.
+                </p>
+                </div>
+                <button class="btn btn-primary" (click)="showHiddenCard('EcoBuddy')">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        @if (showProjectCard === "StockMaster") {
+        <div class="col-md-12">
+           <div class="card technologies-card">
+            <div class="card-body">
+              <h5 class="card-title">StockMaster -- Inventory Manager</h5>
+              <div class="card-text">
+                <p>
+                Fue mi proyecto final para DAW, al que le dediqué bastante tiempo y con el que aprendí muchísimo, ya que utilicé múltiples librerías y APIs, además de profundizar mucho más en tecnologías que ya conocía como Angular y Symfony.
+                </p>
+                <p>
+                En este proyecto destaca el uso de la IA. Gracias a esto desarrollé un panel de notificaciones inteligente que avisa al usuario sobre cualquier incidencia: desde errores simples como un nombre mal introducido en la base de datos hasta problemas más relevantes como un stock bajo o precios incoherentes. Además, implementé un chatbot con acceso a todos los datos del usuario, capaz de responder preguntas relacionadas con los productos, y un sistema de generación de gráficos por IA. El usuario solo tiene que decir qué gráfico quiere generar, y el sistema lo crea automáticamente a partir de los datos almacenados.
+                </p>
+                <p>
+                Para este proyecto utilicé las siguientes tecnologías:
+                </p>
+                <ul>
+                <li><strong>Symfony:</strong> Me encargué del backend, creando una API RESTful que conecta con el frontend y gestiona toda la lógica y conexión con la base de datos.</li>
+                <li><strong>Angular:</strong> Todo el frontend está desarrollado en Angular. Utilicé librerías como <code>chart.js</code>, <code>zxing/ngx-scanner</code> para el escáner de códigos de barras, <code>OpenLayers</code> para mapas interactivos, entre otras. También integré la API de DeepSeek para toda la parte de IA.</li>
+                <li><strong>HTML/CSS:</strong> Para estructurar y dar estilo a los componentes de la interfaz.</li>
+                <li><strong>Bootstrap:</strong> Me permitió crear una web responsive y bien estructurada de forma rápida.</li>
+                <li><strong>AWS:</strong> Utilicé los servicios de AWS para desplegar y alojar la aplicación en producción.</li>
+                <li><strong>MySQL:</strong> Utilicé los MySQL para crear la base de datos.</li>
+                </ul>
+              </div>
+              
+            <div class="technologies-used">
+                <span class="badge me-2" style="background-color: #5bbbe1;">Symfony</span>         
+                <span class="badge me-2" style="background-color: #dd0031;">Angular</span>       
+                <span class="badge me-2" style="background-color: #e34c26;">HTML</span>           
+                <span class="badge me-2" style="background-color: #264de4;">CSS</span>            
+                <span class="badge me-2" style="background-color: #563d7c;">Bootstrap</span>       
+                <span class="badge me-2" style="background-color: #00758f;">MySQL</span>          
+                <span class="badge" style="background-color: #ff9900;">AWS</span>                
+            </div>
+
+            </div>
+          </div>
+        </div>
+        } @else if (showProjectCard === "AliciaEstetica") {
+            <div class="card technologies-card">
+                <div class="card-body">
+                    <h5 class="card-title">Alicia Estética -- Sale of products and reservations</h5>
+                    <div class="card-text">
+                    <p>
+                        Este fue un proyecto en grupo que realizamos para una clínica estética. El enfoque principal fue crear un frontend muy bien hecho y visualmente atractivo, ya que eso era lo que más buscaba el cliente. 
+                    </p>
+                    <p>
+                        La página cuenta con una sección de tienda, donde los usuarios pueden comprar los distintos productos disponibles. También incluye un apartado de reservas, donde puedes elegir el servicio que quieras con el empleado que prefieras. Además, tiene varias páginas informativas que explican todo lo que ofrece la clínica.
+                    </p>
+                    <p>
+                        Las tecnologías utilizadas en este proyecto son las siguientes:
+                    </p>
+                    <ul>
+                        <li><strong>Symfony:</strong> Se utilizó para desarrollar el backend, creando una API RESTful que conecta con la base de datos.</li>
+                        <li><strong>Angular:</strong> Se encargó del frontend de la aplicación. En este caso, no hicimos uso de librerías externas.</li>
+                        <li><strong>HTML/CSS:</strong> Para estructurar y dar estilos a toda la interfaz.</li>
+                        <li><strong>Bootstrap:</strong> Fue fundamental para que la web fuera completamente responsive, algo importante ya que muchos usuarios acceden desde el móvil.</li>
+                        <li><strong>Docker:</strong> Utilizado para ejecutar y contener la aplicación durante el desarrollo.</li>
+                        <li><strong>Git:</strong> Herramienta esencial para el trabajo en grupo. Cada uno trabajaba en su rama y fuimos integrando los cambios en <code>main</code>.</li>
+                        <li><strong>AWS:</strong> Se usó para desplegar la aplicación en la nube.</li>
+                        <li><strong>MySQL:</strong> Para gestionar todos los datos de productos, clientes y reservas.</li>
+                    </ul>
+                    </div>
+
+                    <div class="technologies-used">
+                    <span class="badge me-2" style="background-color: #5bbbe1;">Symfony</span>
+                    <span class="badge me-2" style="background-color: #dd0031;">Angular</span>
+                    <span class="badge me-2" style="background-color: #e34c26;">HTML</span>
+                    <span class="badge me-2" style="background-color: #264de4;">CSS</span>
+                    <span class="badge me-2" style="background-color: #563d7c;">Bootstrap</span>
+                    <span class="badge me-2" style="background-color: #0db7ed;">Docker</span>
+                    <span class="badge me-2" style="background-color: #f05032;">Git</span>
+                    <span class="badge me-2" style="background-color: #00758f;">MySQL</span>
+                    <span class="badge" style="background-color: #ff9900;">AWS</span>
+                    </div>
+                </div>
+                </div>
+        } @else if(showProjectCard === "EcoBuddy") {
+            <div class="card technologies-card">
+            <div class="card-body">
+                <h5 class="card-title">EcoBuddy</h5>
+                <div class="card-text">
+                <p>
+                    EcoBuddy fue un proyecto en equipo que consistía en el desarrollo de una red social enfocada en acciones para mejorar el medio ambiente. 
+                    Los usuarios podían publicar actividades como recogida de basura, plantación de árboles y otras iniciativas sostenibles.
+                </p>
+                <p>
+                    El sistema contaba con un sistema de puntos, que se otorgaban al finalizar cada actividad dependiendo del tiempo invertido y su dificultad. Además, se añadieron trofeos como método de gamificación para motivar la participación continua de los usuarios.
+                </p>
+                <p>
+                    Las tecnologías utilizadas en este proyecto fueron las siguientes:
+                </p>
+                <ul>
+                    <li><strong>PHP:</strong> El desarrollo se hizo completamente en PHP puro, tanto el backend como el frontend, sin uso de frameworks.</li>
+                    <li><strong>HTML/CSS:</strong> Para estructurar la página y darle estilo de manera personalizada.</li>
+                    <li><strong>Git:</strong> Cada integrante trabajaba en su propia rama y se iban integrando los cambios al repositorio principal usando <code>main</code>.</li>
+                    <li><strong>Docker:</strong> Utilizado para montar el entorno de desarrollo y ejecutar la aplicación de forma aislada.</li>
+                    <li><strong>MySQL:</strong> La base de datos se creo con MySQL.</li>
+                </ul>
+                </div>
+
+                <div class="technologies-used">
+                <span class="badge me-2" style="background-color: #8892be;">PHP</span>
+                <span class="badge me-2" style="background-color: #e34c26;">HTML</span>
+                <span class="badge me-2" style="background-color: #264de4;">CSS</span>
+                <span class="badge me-2" style="background-color: #f05032;">Git</span>
+                <span class="badge me-2" style="background-color: #00758f;">MySQL</span>
+                <span class="badge" style="background-color: #0db7ed;">Docker</span>
+                </div>
+            </div>
+            </div>
+
+        }
+        
+      </div>
+
+    </div>
    
   </div>
 </div>  
+
+<!--
+
+      <div class="technologies-used">
+        <span class="badge bg-primary me-2">Symfony</span>
+        <span class="badge bg-danger me-2">Angular</span>
+        <span class="badge bg-info text-dark me-2">Bootstrap</span>
+        <span class="badge bg-success me-2">Docker</span>
+        <span class="badge bg-warning text-dark">MySQL</span>
+      </div>
+-->
