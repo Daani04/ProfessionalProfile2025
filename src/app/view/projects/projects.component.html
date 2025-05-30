@@ -15,44 +15,40 @@
     <div class="container">
       <div class="row">
         <h2>Projects</h2>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">StockMaster</h5>
                 <div class="card-text">
                 <p>
-                    Mi último proyecto consiste en una web de gestión de productos, en la que los usuarios pueden tener diferentes 
-                    almacenes con sus respectivos productos. A partir de los datos almacenados, se generan gráficos automáticamente, 
-                    y gracias a la integración de inteligencia artificial es posible crear cualquier tipo de gráfico personalizado.
+                    My latest project is a product management web application where users can have multiple warehouses with their respective products. Based on the stored data, charts are generated automatically, and thanks to the integration of artificial intelligence, it is possible to create any kind of custom chart.
                 </p>
                 <p>
-                    Además, cuenta con un sistema de chat con IA que permite hacer preguntas sobre el funcionamiento de la web o consultar 
-                    información relacionada con los productos, como el stock disponible, el producto más caro, entre otros.
+                    Additionally, it features an AI-powered chat system that allows users to ask questions about how the site works or to inquire about product-related information, such as available stock, the most expensive product, and more.
                 </p>
                 <p>
-                    Una de las funciones principales es el escáner, que permite añadir o retirar productos de los almacenes simplemente 
-                    escaneando su código de barras.
+                    One of the main features is the scanner, which enables users to add or remove products from warehouses simply by scanning their barcodes.
                 </p>
                 </div>
                 <button class="btn btn-primary" (click)="showHiddenCard('StockMaster')">Learn more</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Alicia Estetica</h5>
                 <div class="card-text">
                 <p>
-                    Proyecto realizado de forma grupal, consiste en una web para una clínica estética. 
-                    Entre sus principales funciones destacan la tienda de productos, donde desde el lado del administrador se pueden ir añadiendo nuevos productos.
+                    This was a group project consisting of a website for an aesthetic clinic.  
+                    One of its main features is the product store, where administrators can add new products.
                 </p>
                 <p>
-                    También incluye un formulario de reserva que solo permite seleccionar días y horas disponibles. 
-                    Una vez que otro usuario ha reservado una cita con ese profesional en una fecha y hora determinada, esa franja deja de estar disponible.
+                    It also includes a booking form that only allows selecting available days and times.  
+                    Once another user has booked an appointment with a professional at a specific date and time, that slot becomes unavailable.
                 </p>
                 <p>
-                    Por último, la página principal muestra todos los servicios que ofrece la clínica, organizados de forma clara y accesible para los usuarios.
+                    Finally, the homepage displays all the services offered by the clinic, organized clearly and accessibly for users.
                 </p>
                 </div>
                 <button class="btn btn-primary" (click)="showHiddenCard('AliciaEstetica')">Learn more</button>
@@ -60,19 +56,19 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">EcoBuddy</h5>
-              <div class="card-text">
+                <div class="card-text">
                 <p>
-                    Este proyecto fue realizado en grupo. Se trata de una red social cuyo objetivo es incentivar a las personas a realizar acciones positivas para el medio ambiente.
+                    This project was developed as a team. It is a social network aimed at encouraging people to take positive actions for the environment.
                 </p>
                 <p>
-                    Los usuarios pueden apuntarse a actividades como recogida de basura, plantación de árboles y muchas otras propuestas por la comunidad. Además, cuenta con un sistema de premios que motiva a seguir participando en estas actividades.
+                    Users can join activities such as trash collection, tree planting, and many other community-driven initiatives. It also features a rewards system that motivates continued participation in these activities.
                 </p>
                 <p>
-                    El objetivo final de esta red social es fomentar este tipo de acciones y generar conciencia sobre la importancia de cuidar el medio ambiente.
+                    The ultimate goal of this social network is to promote these kinds of actions and raise awareness about the importance of taking care of the environment.
                 </p>
                 </div>
                 <button class="btn btn-primary" (click)="showHiddenCard('EcoBuddy')">Learn more</button>
@@ -87,25 +83,25 @@
            <div class="card technologies-card">
             <div class="card-body">
               <h5 class="card-title">StockMaster -- Inventory Manager</h5>
-              <div class="card-text">
+                <div class="card-text">
                 <p>
-                Fue mi proyecto final para DAW, al que le dediqué bastante tiempo y con el que aprendí muchísimo, ya que utilicé múltiples librerías y APIs, además de profundizar mucho más en tecnologías que ya conocía como Angular y Symfony.
+                    This was my final project for DAW, to which I dedicated a lot of time and from which I learned a great deal. I used multiple libraries and APIs, and deepened my knowledge in technologies I was already familiar with, such as Angular and Symfony.
                 </p>
                 <p>
-                En este proyecto destaca el uso de la IA. Gracias a esto desarrollé un panel de notificaciones inteligente que avisa al usuario sobre cualquier incidencia: desde errores simples como un nombre mal introducido en la base de datos hasta problemas más relevantes como un stock bajo o precios incoherentes. Además, implementé un chatbot con acceso a todos los datos del usuario, capaz de responder preguntas relacionadas con los productos, y un sistema de generación de gráficos por IA. El usuario solo tiene que decir qué gráfico quiere generar, y el sistema lo crea automáticamente a partir de los datos almacenados.
+                    A standout feature of this project is the use of AI. Thanks to this, I developed an intelligent notification panel that alerts the user to any issues—from simple errors like a misspelled name in the database to more critical problems like low stock or inconsistent prices. Additionally, I implemented a chatbot with access to all user data, capable of answering questions related to the products, as well as an AI-powered chart generation system. The user simply specifies the desired chart, and the system automatically generates it based on the stored data.
                 </p>
                 <p>
-                Para este proyecto utilicé las siguientes tecnologías:
+                    For this project, I used the following technologies:
                 </p>
                 <ul>
-                <li><strong>Symfony:</strong> Me encargué del backend, creando una API RESTful que conecta con el frontend y gestiona toda la lógica y conexión con la base de datos.</li>
-                <li><strong>Angular:</strong> Todo el frontend está desarrollado en Angular. Utilicé librerías como <code>chart.js</code>, <code>zxing/ngx-scanner</code> para el escáner de códigos de barras, <code>OpenLayers</code> para mapas interactivos, entre otras. También integré la API de DeepSeek para toda la parte de IA.</li>
-                <li><strong>HTML/CSS:</strong> Para estructurar y dar estilo a los componentes de la interfaz.</li>
-                <li><strong>Bootstrap:</strong> Me permitió crear una web responsive y bien estructurada de forma rápida.</li>
-                <li><strong>AWS:</strong> Utilicé los servicios de AWS para desplegar y alojar la aplicación en producción.</li>
-                <li><strong>MySQL:</strong> Utilicé los MySQL para crear la base de datos.</li>
+                    <li><strong>Symfony:</strong> I handled the backend, creating a RESTful API that connects with the frontend and manages all the logic and database interactions.</li>
+                    <li><strong>Angular:</strong> The entire frontend was developed in Angular. I used libraries such as <code>chart.js</code>, <code>zxing/ngx-scanner</code> for barcode scanning, <code>OpenLayers</code> for interactive maps, among others. I also integrated the DeepSeek API for AI functionalities.</li>
+                    <li><strong>HTML/CSS:</strong> Used to structure and style the interface components.</li>
+                    <li><strong>Bootstrap:</strong> Allowed me to quickly create a well-structured, responsive website.</li>
+                    <li><strong>AWS:</strong> I utilized AWS services to deploy and host the application in production.</li>
+                    <li><strong>MySQL:</strong> Used MySQL to create the database.</li>
                 </ul>
-              </div>
+                </div>
               
             <div class="technologies-used">
                 <span class="badge me-2" style="background-color: #5bbbe1;">Symfony</span>         
@@ -126,23 +122,23 @@
                     <h5 class="card-title">Alicia Estética -- Sale of products and reservations</h5>
                     <div class="card-text">
                     <p>
-                        Este fue un proyecto en grupo que realizamos para una clínica estética. El enfoque principal fue crear un frontend muy bien hecho y visualmente atractivo, ya que eso era lo que más buscaba el cliente. 
+                        This was a group project we carried out for an aesthetic clinic. The main focus was to create a well-crafted and visually appealing frontend, as this was the client’s top priority.
                     </p>
                     <p>
-                        La página cuenta con una sección de tienda, donde los usuarios pueden comprar los distintos productos disponibles. También incluye un apartado de reservas, donde puedes elegir el servicio que quieras con el empleado que prefieras. Además, tiene varias páginas informativas que explican todo lo que ofrece la clínica.
+                        The website features a store section where users can purchase various available products. It also includes a booking section where you can select the service you want with the employee of your choice. Additionally, there are several informational pages explaining everything the clinic offers.
                     </p>
                     <p>
-                        Las tecnologías utilizadas en este proyecto son las siguientes:
+                        The technologies used in this project were the following:
                     </p>
                     <ul>
-                        <li><strong>Symfony:</strong> Se utilizó para desarrollar el backend, creando una API RESTful que conecta con la base de datos.</li>
-                        <li><strong>Angular:</strong> Se encargó del frontend de la aplicación. En este caso, no hicimos uso de librerías externas.</li>
-                        <li><strong>HTML/CSS:</strong> Para estructurar y dar estilos a toda la interfaz.</li>
-                        <li><strong>Bootstrap:</strong> Fue fundamental para que la web fuera completamente responsive, algo importante ya que muchos usuarios acceden desde el móvil.</li>
-                        <li><strong>Docker:</strong> Utilizado para ejecutar y contener la aplicación durante el desarrollo.</li>
-                        <li><strong>Git:</strong> Herramienta esencial para el trabajo en grupo. Cada uno trabajaba en su rama y fuimos integrando los cambios en <code>main</code>.</li>
-                        <li><strong>AWS:</strong> Se usó para desplegar la aplicación en la nube.</li>
-                        <li><strong>MySQL:</strong> Para gestionar todos los datos de productos, clientes y reservas.</li>
+                        <li><strong>Symfony:</strong> Used to develop the backend, creating a RESTful API that connects to the database.</li>
+                        <li><strong>Angular:</strong> Responsible for the frontend of the application. In this case, we did not use any external libraries.</li>
+                        <li><strong>HTML/CSS:</strong> Used to structure and style the entire interface.</li>
+                        <li><strong>Bootstrap:</strong> Essential for making the website fully responsive, which was important since many users access it via mobile devices.</li>
+                        <li><strong>Docker:</strong> Used to run and contain the application during development.</li>
+                        <li><strong>Git:</strong> A crucial tool for team collaboration. Each member worked on their own branch and we integrated changes into <code>main</code>.</li>
+                        <li><strong>AWS:</strong> Used to deploy the application in the cloud.</li>
+                        <li><strong>MySQL:</strong> Used to manage all the data related to products, clients, and bookings.</li>
                     </ul>
                     </div>
 
@@ -162,24 +158,25 @@
         } @else if(showProjectCard === "EcoBuddy") {
             <div class="card technologies-card">
             <div class="card-body">
-                <h5 class="card-title">EcoBuddy</h5>
+                <h5 class="card-title">EcoBuddy -- Sustainable social network</h5>
                 <div class="card-text">
                 <p>
-                    EcoBuddy fue un proyecto en equipo que consistía en el desarrollo de una red social enfocada en acciones para mejorar el medio ambiente. 
-                    Los usuarios podían publicar actividades como recogida de basura, plantación de árboles y otras iniciativas sostenibles.
+                    EcoBuddy was a team project focused on developing a social network aimed at promoting environmentally friendly actions. 
+                    Users could share activities such as garbage collection, tree planting, and other sustainable initiatives.
                 </p>
                 <p>
-                    El sistema contaba con un sistema de puntos, que se otorgaban al finalizar cada actividad dependiendo del tiempo invertido y su dificultad. Además, se añadieron trofeos como método de gamificación para motivar la participación continua de los usuarios.
+                    The platform featured a points system, where users earned points after completing each activity based on its duration and difficulty. 
+                    Additionally, trophies were implemented as a gamification method to encourage ongoing user participation.
                 </p>
                 <p>
-                    Las tecnologías utilizadas en este proyecto fueron las siguientes:
+                    The technologies used in this project were:
                 </p>
                 <ul>
-                    <li><strong>PHP:</strong> El desarrollo se hizo completamente en PHP puro, tanto el backend como el frontend, sin uso de frameworks.</li>
-                    <li><strong>HTML/CSS:</strong> Para estructurar la página y darle estilo de manera personalizada.</li>
-                    <li><strong>Git:</strong> Cada integrante trabajaba en su propia rama y se iban integrando los cambios al repositorio principal usando <code>main</code>.</li>
-                    <li><strong>Docker:</strong> Utilizado para montar el entorno de desarrollo y ejecutar la aplicación de forma aislada.</li>
-                    <li><strong>MySQL:</strong> La base de datos se creo con MySQL.</li>
+                    <li><strong>PHP:</strong> The entire project was developed using pure PHP for both backend and frontend, without any frameworks.</li>
+                    <li><strong>HTML/CSS:</strong> Used to structure the page and apply custom styling.</li>
+                    <li><strong>Git:</strong> Each team member worked on their own branch, and changes were merged into the main branch.</li>
+                    <li><strong>Docker:</strong> Used to set up the development environment and run the application in an isolated container.</li>
+                    <li><strong>MySQL:</strong> The database was created using MySQL to store all necessary data.</li>
                 </ul>
                 </div>
 
