@@ -21,7 +21,7 @@
 
 .gradient-background-aboutPage {
     position: absolute;
-    height: auto;
+    height: 3300px;
   }
 
 .translucid-container, .translucid-container-aboutPage {
@@ -36,7 +36,7 @@
 .translucid-container-aboutPage {
     margin-top: 50px;
     margin-bottom: 50px;
-    height: auto;
+    height: 3200px;
 }
 
 @media (max-width: 1499px) {

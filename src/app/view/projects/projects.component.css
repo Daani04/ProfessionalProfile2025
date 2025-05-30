@@ -1,0 +1,11 @@
+h1, h2 {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+}
+
+#pagePresentation {
+    margin: 100px auto 0 auto;
+    width: auto;
+    max-width: 800px;
+    padding: 30px;
+}

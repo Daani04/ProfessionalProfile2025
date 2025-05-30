@@ -63,10 +63,10 @@ export class AboutMeComponent implements AfterViewInit {
     },
   ];
 
-
   ngAfterViewInit() {
     this.initScrollAnimations();
   }
+
   private initScrollAnimations() {
     this.cardElems.forEach(card => {
       const el = card.nativeElement;

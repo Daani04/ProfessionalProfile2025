@@ -131,5 +131,16 @@ h2{
   opacity: 1;
   z-index: 1;
 }
+/*---------------------------------------------------------*/
+
+.framework-card {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  min-height: 320px;
+  margin-top: 20px;
+  position: relative;
+}
+
 
 
