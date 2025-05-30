@@ -1,0 +1,104 @@
+form {
+    max-width: 800px;
+    width: auto;
+    margin: 1px auto 0 auto;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #ab69e5;
+  box-shadow: 0 0 60px 20px rgba(180, 150, 255, 0.2);
+  outline: none;
+}
+
+button {
+  background-color: #04843c;
+  padding: 10px 20px;
+  width: auto;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(4, 132, 60, 0.4);
+}
+
+button:hover {
+  background-color: rgb(9, 161, 75);
+  box-shadow: 0 8px 15px rgba(9, 161, 75, 0.6);
+  color: white;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+h1, h2 {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+}
+
+h1{
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+#contactFormsGmail, #contactFormsWha {
+    margin: 0 auto;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 30px;
+    margin-left: 5px;
+}
+
+#wha {
+    width: 40px;
+}
+
+p {
+    margin-left: 5px;
+}
+
+#linkCont {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+#imgLink {
+    width: 150px;
+    height: 150px;
+}

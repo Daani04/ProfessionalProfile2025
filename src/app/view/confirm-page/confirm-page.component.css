@@ -1,0 +1,12 @@
+h1{
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    font-size: 100px;
+}
+
+/*Modificar, no se centra bien verticalmente*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

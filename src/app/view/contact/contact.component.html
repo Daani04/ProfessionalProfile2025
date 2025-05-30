@@ -1,0 +1,87 @@
+<div class="gradient-background-projects">
+  <div class="translucid-container-projects">
+    <app-header></app-header>
+
+    <h1>Contact me</h1>
+
+    <form id="contactForm" action="https://script.google.com/macros/s/AKfycbxuHTxcAZwAqrqDwTZwuPNnltcSA69UgEceyXnigTCaSvtIPNuCGNcyu90QaQ1u6tXeeA/exec" method="POST" target="hiddenFrame">
+        <div class="form-group mb-4">
+            <label for="affair">Affair</label>
+            <input type="text" class="form-control" id="affair" name="affair" placeholder="Enter affair">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="content">Content</label>
+            <textarea class="form-control" id="content" name="content" rows="4" placeholder="Enter content"></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" (click)="confirmationMailPage()">Submit</button>
+        </div>
+    </form>
+
+    <!-- Añade este iframe invisible -->
+    <iframe name="hiddenFrame" style="display:none;"></iframe>
+
+    <h2>Other forms of contact</h2>
+    <div id="contactFormsGmail">
+        <img src="../../../../img/gmailLogotipo.png" alt="About me button">
+        <span>danielarastell302004&#64;gmail.com</span>
+
+    </div>
+        <div id="contactFormsWha">
+        <img id="wha" src="../../../../img/wha.png" alt="About me button">
+        <span>627627981</span>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="linkCont"(mouseover)="changueToGithubAnimated()">
+                    @if (githubAnimated === true) {
+                        <a href="https://github.com/Daani04">
+                            <img id="imgLink" src="../../../../img/githubLink.gif" alt="About me button">
+                        </a>
+                    } @else {
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="none" viewBox="0 0 430 430">
+                            <mask id="3EP1gepqM8a" width="335" height="335" x="52" y="47" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                            <circle cx="219.5" cy="214.5" r="167.5" fill="#fff"/>
+                            </mask>
+                            <g mask="url(#3EP1gepqM8a)">
+                            <path stroke="#9cc2f4" stroke-linejoin="round" stroke-width="18"
+                                d="M263.202 130.986c3.291-4.243 17.198-20.48 35.949-18.508 12.033 16.558 2.626 38.902 1.551 41.317 8.199 10.842 12.678 25.5 12.678 45.021 0 47.676-20.609 66.346-66.022 71.262 5.613 4.584 9.197 11.56 9.197 19.373v107.862h-79.29V289.451c0-7.811 3.582-14.786 9.194-19.37C140.923 265.17 120 246.502 120 198.816c0-19.681 4.605-34.42 13.001-45.288-1.497-3.469-10.007-24.983 1.668-41.05 18.722-1.969 32.614 14.213 35.934 18.488 13.389-3.457 29.003-4.832 46.307-4.832 17.339 0 32.94 1.381 46.292 4.852Z" />
+                            </g>
+                            <path stroke="#9cc2f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"
+                            d="M177.265 329.808c-11.334 4.166-31.144 8.785-46.5-3.5-5-4-10.391-9.281-15-18.5-4.75-9.5-10-13-19-22-7.5-7.5 1.703-23.102 15.5-15.5 8.207 4.522 14.835 15.759 19.5 21.5 13 16 31.833 9.5 45.5 5" />
+                            <circle cx="215" cy="215" r="167.5" stroke="#c69cf4" stroke-width="18" />
+                        </svg>
+                    }
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="linkCont" (mouseover)="changueToLinkedinAnimated()">
+                    @if (linkedinAnimated === true) {
+                        <a href="https://www.linkedin.com/in/daniel-arastell-rozalen-65582a22a/">
+                            <img id="imgLink" src="../../../../img/linkedinLink.gif" alt="About me button">
+                        </a>
+                    } @else {
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="none" viewBox="0 0 430 430">
+                        <g stroke-width="18">
+                        <circle cx="215" cy="215" r="167.5" stroke="#c69cf4"/>
+                        <path stroke="#9cc2f4" stroke-linejoin="round" d="M125 180h40v120h-40zm190 38.173V300h-40v-67.5c0-12.426-10.074-22.5-22.5-22.5S230 220.074 230 232.5V300h-40V180h40v15l11.86-9.488A47.97 47.97 0 0 1 271.827 175C295.671 175 315 194.329 315 218.173Z"/>
+                        <circle cx="144.5" cy="132.5" r="22.5" stroke="#9cc2f4" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+  </div>
+</div>  
+
