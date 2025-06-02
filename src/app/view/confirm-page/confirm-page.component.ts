@@ -11,10 +11,11 @@ export class ConfirmPageComponent {
 
   constructor(private router: Router) { }
 
+  
   ngOnInit() {
     setTimeout(()=>{
       this.router.navigate(['/home']);
     }, 2500);
   }
-    
+  
 }

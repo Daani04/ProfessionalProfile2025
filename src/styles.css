@@ -1,4 +1,4 @@
-.gradient-background-general, .gradient-background-aboutPage, .gradient-background-projects {
+.gradient-background-home, .gradient-background-general, .gradient-background-confirmPage {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,18 +19,14 @@
     justify-content: center;
 }
 
-.gradient-background-aboutPage {
-    position: absolute;
-    height: 3300px;
-    z-index: -1;
-  }
 
-.gradient-background-projects {
+
+.gradient-background-general {
     position: absolute;
     height: auto;
 }
 
-.translucid-container, .translucid-container-aboutPage, .translucid-container-projects {
+.translucid-container, .translucid-container-general, .translucid-container-confirmPage {
     width: 90%;
     height: 80%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -39,20 +35,14 @@
     position: relative;
 }
 
-.translucid-container-aboutPage {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 3200px;
-}
-
-.translucid-container-projects {
+.translucid-container-general {
     margin-top: 50px;
     margin-bottom: 50px;
     height: auto;
 }
 
 @media (max-width: 1499px) {
-  .gradient-background-general {
+  .gradient-background-home {
     position: absolute;
     height: auto;
   }
@@ -64,15 +54,4 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .gradient-background-aboutPage {
-    position: relative;
-    height: auto;
-  }
-
-  .translucid-container-aboutPage {
-    height: auto;
-    padding-bottom: 50px;
-  }
-}
 

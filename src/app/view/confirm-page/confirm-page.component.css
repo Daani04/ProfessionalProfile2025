@@ -5,14 +5,20 @@ h1 {
   margin: 0;
 }
 
-.gradient-background-general {
+.gradient-background-confirmPage {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.translucid-container {
+.translucid-container-confirmPage {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media(max-width:750px){
+  h1{
+    font-size: 60px;
+  }
 }
