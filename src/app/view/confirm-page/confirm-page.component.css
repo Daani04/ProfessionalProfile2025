@@ -1,12 +1,18 @@
-h1{
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    font-size: 100px;
+h1 {
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  font-size: 100px;
+  margin: 0;
 }
 
-/*Modificar, no se centra bien verticalmente*/
-.container {
+.gradient-background-general {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.translucid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

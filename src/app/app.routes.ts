@@ -11,5 +11,5 @@ export const routes: Routes = [
     { path: 'about-me', component: AboutMeComponent, data: { animation: 'AboutMePage' }},
     { path: 'projects', component: ProjectsComponent, data: { animation: 'ProjectsPage' }},
     { path: 'contact', component: ContactComponent, data: { animation: 'ContactPage' }},
-    { path: 'confirm-page', component: ConfirmPageComponent, data: { animation: 'ContactPage' }},
+    { path: 'confirm-page', component: ConfirmPageComponent, data: { animation: 'ConfirmPage' }},
 ];
