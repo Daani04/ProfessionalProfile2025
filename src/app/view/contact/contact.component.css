@@ -102,3 +102,11 @@ p {
     width: 150px;
     height: 150px;
 }
+
+@media (max-width: 500px) {
+  #contactFormsGmail, #contactFormsWha {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
