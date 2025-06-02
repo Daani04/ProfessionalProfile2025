@@ -4,7 +4,7 @@
 }
 
 nav.navbar {
-  margin-right: 20px;
+  position: absolute;
 }
 
 h1 {
@@ -37,4 +37,9 @@ h1 {
 }
 
 
+@media (max-width: 576px) {
+nav.navbar {
+    position: static; 
+  }
+}
 

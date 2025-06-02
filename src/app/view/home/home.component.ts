@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from "../../component/header/header.component";
 import { Router } from '@angular/router';
+import { HomeHeaderComponent } from "../../component/home-header/home-header.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, HomeHeaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
