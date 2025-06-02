@@ -63,3 +63,15 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .gradient-background-aboutPage {
+    position: relative;
+    height: auto;
+  }
+
+  .translucid-container-aboutPage {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
