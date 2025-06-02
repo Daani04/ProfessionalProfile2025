@@ -22,6 +22,7 @@
 .gradient-background-aboutPage {
     position: absolute;
     height: 3300px;
+    z-index: -1;
   }
 
 .gradient-background-projects {
