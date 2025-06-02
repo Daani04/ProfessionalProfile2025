@@ -75,3 +75,22 @@ h2 {
   filter: brightness(1.15);
 }
 
+@media (max-width: 1200px) {
+  .container .row {
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+    align-items: center;    /* Centrar horizontalmente */
+  }
+
+  .col-md-4 {
+    max-width: 100% !important; /* Para que ocupen todo el ancho */
+    width: 100% !important;
+    margin-bottom: 20px;        /* Espacio entre cards */
+  }
+
+  .card {
+    position: static !important; /* Quitar absolute */
+    width: 90%;                  /* Un poco de margen lateral */
+    margin: 0 auto 20px auto;    /* Centrar y espacio abajo */
+  }
+}
