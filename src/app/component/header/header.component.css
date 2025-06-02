@@ -22,4 +22,8 @@ h1 {
     text-align: center;
 }
 
+.nav-link {
+  white-space: nowrap;
+}
+
 
