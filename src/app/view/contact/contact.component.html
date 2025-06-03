@@ -4,24 +4,36 @@
 
     <h1>{{getText('Contáctame', 'Contact me')}}</h1>
 
-    <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyTyzg9Teyg4dVyElNjLJr94GNiA6z4t53_Bzs8cueRap-BZef8Yip7mFN9cUi7ZErmrA/exec" method="POST" target="hiddenFrame">
+    <form id="contactForm" (submit)="onSubmit()" [formGroup]="reactiveForm" action="https://script.google.com/macros/s/AKfycbyTyzg9Teyg4dVyElNjLJr94GNiA6z4t53_Bzs8cueRap-BZef8Yip7mFN9cUi7ZErmrA/exec" method="POST" target="hiddenFrame">
         <div class="form-group mb-4">
             <label for="affair">{{getText('Asunto', 'Affair')}}</label>
-            <input type="text" class="form-control" id="affair" name="affair" placeholder="{{getText('Ingrese asunto', 'Enter affair')}}
-">
+            <input type="text" class="form-control" id="affair" name="affair" formControlName="affair" placeholder="{{getText('Ingrese asunto', 'Enter affair')}}" required>
         </div>
 
         <div class="form-group mb-4">
             <label for="content">{{getText('Contenido', 'Content')}}</label>
-            <textarea class="form-control" id="content" name="content" rows="4" placeholder="{{getText('Ingresar contenido', 'Enter content')}}"></textarea>
+            <textarea class="form-control" id="content" name="content" rows="4" formControlName="content" placeholder="{{getText('Ingresar contenido', 'Enter content')}}" required></textarea>
         </div>
 
+        @if (invalidForm === true) {
+            <div id="invalidFormWarning">
+                <span class="inline-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-exclamation-circle"
+                    viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                </svg>
+                <p style="margin: 0;">{{getText('Completa los campos del formulario', 'Complete the form fields')}}</p>
+                </span>            
+            </div>
+        }
+
         <div class="text-center">
-            <button type="submit" (click)="confirmationMailPage()">{{getText('Enviar', 'Submit')}}</button>
+            <button type="submit">{{getText('Enviar', 'Submit')}}</button>
         </div>
     </form>
 
-    <!-- Añade este iframe invisible -->
+    <!-- Elimina la pantalla que genera google scripts -->
     <iframe name="hiddenFrame" style="display:none;"></iframe>
 
     <h2>{{getText('Otras formas de contacto', 'Other forms of contact')}}</h2>
