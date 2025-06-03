@@ -38,11 +38,4 @@ export class HeaderComponent {
      this.router.navigate(['/home']);
   }
 
-  public changueLenguage(lenguege: string): void {
-    if (lenguege === "es") {
-      this.isSpanish = true;
-    } else {
-      this.isSpanish = false;
-    }
-  }
 }

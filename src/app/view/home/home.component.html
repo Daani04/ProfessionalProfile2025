@@ -8,18 +8,17 @@
             <h1>WEB</h1>
             <h1>DEVELOPER</h1>
             <p>
-              Full stack web developer with a focus on frontend. Passionate about web 
-              development and functional design. I'm motivated by seeing how an idea can turn 
-              into something real and useful through code.
+               {{getText('Desarrollador web full stack con enfoque en el frontend. Apasionado por el desarrollo web y el diseño funcional. Me motiva ver cómo una idea puede convertirse en algo real y útil a través del código.',
+               'Full stack web developer with a focus on frontend. Passionate about web development and functional design. I`m motivated by seeing how an idea can turn into something real and useful through code.')}}
             </p>
-            <button onclick="window.open('../../../../img/Curriculum2025.pdf')">See mi CV</button>
+            <button onclick="window.open('../../../../img/Curriculum2025.pdf')">{{getText('Ver mi CV','See mi CV')}}</button>
           </div>
           @if(displayWidth > 1499) {
           <div id="profileContainer" (click)="goToAboutMe()" class="animate-on-scroll">
             <div id="profileArrow">
               <img src="../../../../img/arrow.png" alt="About me button">
             </div>
-            <p>About me</p>
+            <p>{{getText('Sobre mi','About me')}}</p>
           </div>
           }
         </div>
@@ -47,7 +46,7 @@
             <div id="profileArrow">
               <img src="../../../../img/arrow.png" alt="About me button">
             </div>
-            <p>About me</p>
+            <p>{{getText('Sobre mi','About me')}}</p>
           </div>
         </div>
       </div>

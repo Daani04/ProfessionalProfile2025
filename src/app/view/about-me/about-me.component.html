@@ -6,12 +6,10 @@
       <div class="row">
         <div class="col-md-12 first-col d-flex justify-content-center">
           <div id="infoContainer">
-            <h1>ABOUT ME</h1>
+            <h1>{{getText('SOBRE MI','ABOUT ME')}} </h1>
             <p>
-              I am a web developer with a background in IT systems. I hold a Technician degree 
-              in Microcomputer Systems and Networks (TSMR) as well as a Web Application Development 
-              (DAW) diploma. I consider myself a proactive person, eager to keep learning and growing 
-              professionally. Below, I outline some of the technologies and tools I have worked with.
+              {{getText('Soy desarrollador web con formación en sistemas informáticos. Poseo el título de Técnico en Sistemas Microinformáticos y Redes (SMR), así como el de Técnico Superior en Desarrollo de Aplicaciones Web (DAW). Me considero una persona proactiva, con ganas de seguir aprendiendo y creciendo profesionalmente. A continuación, presento algunas de las tecnologías y herramientas con las que he trabajado.',
+              'I am a web developer with a background in IT systems. I hold a Technician degree in Microcomputer Systems and Networks (TSMR) as well as a Web Application Development (DAW) diploma. I consider myself a proactive person, eager to keep learning and growing professionally. Below, I outline some of the technologies and tools I have worked with.')}}
             </p>
           </div>
         </div>
@@ -19,20 +17,35 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Technical knowledge</h2>
+          <h2>{{getText('Conocimientos tecnicos','Technical knowledge')}} </h2>
           <div id="contTechnicalknowledge">
             <div id="lineDown"></div>
+            @if (isSpanish === false) {
             @for (item of allItems; track $index) {
-            <div class="card" #cardElem
-                 [class.left-card]="item.position === 'left'"
-                 [class.right-card]="item.position === 'right'"
-                 [style.top.px]="$index * 300">
-                <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">{{item.key}}</h5>
-                  <p class="card-text">{{item.value}}</p>
-                </div>
-            </div>
+              <div class="card" #cardElem
+                  [class.left-card]="item.position === 'left'"
+                  [class.right-card]="item.position === 'right'"
+                  [style.top.px]="$index * 300">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">{{item.key}}</h5>
+                    <p class="card-text">{{item.value}}</p>
+                  </div>
+              </div>
+              }
+            }@else {
+            @for (item of allItemsSpa; track $index) {
+              <div class="card" #cardElem
+                  [class.left-card]="item.position === 'left'"
+                  [class.right-card]="item.position === 'right'"
+                  [style.top.px]="$index * 300">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">{{item.key}}</h5>
+                    <p class="card-text">{{item.value}}</p>
+                  </div>
+              </div>
+              }
             }
+
           </div>
         </div>
       </div>
@@ -44,9 +57,8 @@
             <div class="card-body">
               <h5 class="card-title">Bootstrap</h5>
               <p class="card-text">
-                I've been using Bootstrap for two years, mainly to quickly build layouts and create 
-                responsive designs. Over time, I've learned to take full advantage of the grid system, customize components, 
-                and combine it with other frameworks when needed.
+                {{getText('He estado utilizando Bootstrap durante dos años, principalmente para construir maquetaciones de forma rápida y crear diseños responsivos. Con el tiempo, he aprendido a aprovechar al máximo el sistema de rejilla, personalizar componentes y combinarlo con otros frameworks cuando es necesario.',
+                'I´ve been using Bootstrap for two years, mainly to quickly build layouts and create responsive designs. Over time, I´ve learned to take full advantage of the grid system, customize components, and combine it with other frameworks when needed.')}}
               </p>
             </div>
           </div>
@@ -56,9 +68,8 @@
             <div class="card-body">
               <h5 class="card-title">Symfony</h5>
               <p class="card-text">
-                I have experience with Symfony, where I've been responsible for developing the backend for several projects, 
-                both personal and collaborative. I've mainly worked on building RESTful APIs, managing routes, controllers, 
-                and entities, as well as implementing security, authentication, and database connections.
+                {{getText('Tengo experiencia con Symfony, donde he sido responsable del desarrollo del backend para varios proyectos, tanto personales como colaborativos. Principalmente, he trabajado en la creación de APIs RESTful, gestión de rutas, controladores y entidades, así como en la implementación de seguridad, autenticación y conexiones a bases de datos.', 
+                'I have experience with Symfony, where I´ve been responsible for developing the backend for several projects, both personal and collaborative. I´ve mainly worked on building RESTful APIs, managing routes, controllers, and entities, as well as implementing security, authentication, and database connections.')}}
               </p>
             </div>
           </div>
@@ -69,9 +80,8 @@
             <div class="card-body">
               <h5 class="card-title">Angular</h5>
               <p class="card-text">
-                My recent projects have focused on Angular, where I feel most confident and experienced due to my strong focus 
-                on this framework. I have developed numerous projects, both solo and collaboratively, which has allowed me to 
-                master its core concepts and best practices.
+                {{getText('Mis proyectos recientes se han centrado en Angular, donde me siento más seguro y experimentado gracias a mi fuerte enfoque en este framework. He desarrollado numerosos proyectos, tanto en solitario como de forma colaborativa, lo que me ha permitido dominar sus conceptos fundamentales y las mejores prácticas.', 
+                'My recent projects have focused on Angular, where I feel most confident and experienced due to my strong focus on this framework. I have developed numerous projects, both solo and collaboratively, which has allowed me to master its core concepts and best practices.')}}
               </p>
             </div>
           </div>

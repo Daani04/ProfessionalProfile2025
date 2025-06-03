@@ -2,28 +2,29 @@
   <div class="translucid-container-general">
     <app-header></app-header>
 
-    <h1>Contact me</h1>
+    <h1>{{getText('Contáctame', 'Contact me')}}</h1>
 
     <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyTyzg9Teyg4dVyElNjLJr94GNiA6z4t53_Bzs8cueRap-BZef8Yip7mFN9cUi7ZErmrA/exec" method="POST" target="hiddenFrame">
         <div class="form-group mb-4">
-            <label for="affair">Affair</label>
-            <input type="text" class="form-control" id="affair" name="affair" placeholder="Enter affair">
+            <label for="affair">{{getText('Asunto', 'Affair')}}</label>
+            <input type="text" class="form-control" id="affair" name="affair" placeholder="{{getText('Ingrese asunto', 'Enter affair')}}
+">
         </div>
 
         <div class="form-group mb-4">
-            <label for="content">Content</label>
-            <textarea class="form-control" id="content" name="content" rows="4" placeholder="Enter content"></textarea>
+            <label for="content">{{getText('Contenido', 'Content')}}</label>
+            <textarea class="form-control" id="content" name="content" rows="4" placeholder="{{getText('Ingresar contenido', 'Enter content')}}"></textarea>
         </div>
 
         <div class="text-center">
-            <button type="submit" (click)="confirmationMailPage()">Submit</button>
+            <button type="submit" (click)="confirmationMailPage()">{{getText('Enviar', 'Submit')}}</button>
         </div>
     </form>
 
     <!-- Añade este iframe invisible -->
     <iframe name="hiddenFrame" style="display:none;"></iframe>
 
-    <h2>Other forms of contact</h2>
+    <h2>{{getText('Otras formas de contacto', 'Other forms of contact')}}</h2>
     <div id="contactFormsGmail">
         <img src="../../../../img/gmailLogotipo.png" alt="About me button">
         <span>danielarastell302004&#64;gmail.com</span>

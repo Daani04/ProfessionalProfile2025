@@ -3,34 +3,42 @@
     <app-header></app-header>
 
     <div id="pagePresentation">
-        <h1>About the projects</h1>
+        <h1>{{getText('Mis proyectos',
+        'About the projects')}} </h1>
         <p>
-            Throughout my training as a web developer, I’ve worked on different projects that have helped me gain experience 
-            with various technologies. In this portfolio, I’m going to show three of them, explaining a bit about what they are, 
-            which technologies I used, and how they were carried out. Each project helped me face different challenges and learn 
-            new ways to solve problems, which has been key to my professional growth.
+          {{getText('A lo largo de mi formación como desarrollador web, he trabajado en diferentes proyectos que me han ayudado a ganar experiencia con diversas tecnologías. En este portafolio, voy a mostrar tres de ellos, explicando un poco sobre qué son, qué tecnologías utilicé y cómo se llevaron a cabo. Cada proyecto me ayudó a enfrentar diferentes desafíos y a aprender nuevas formas de resolver problemas, lo cual ha sido clave para mi crecimiento profesional.', 
+          'Throughout my training as a web developer, I’ve worked on different projects that have helped me gain experience with various technologies. In this portfolio, I’m going to show three of them, explaining a bit about what they are, which technologies I used, and how they were carried out. Each project helped me face different challenges and learn new ways to solve problems, which has been key to my professional growth.')}}
         </p>
     </div>
 
     <div class="container">
       <div class="row">
-        <h2>Projects</h2>
+        <h2>{{getText('Proyectos','Projects')}} </h2>
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">StockMaster</h5>
                 <div class="card-text">
-                <p>
-                    My latest project is a product management web application where users can have multiple warehouses with their respective products. Based on the stored data, charts are generated automatically, and thanks to the integration of artificial intelligence, it is possible to create any kind of custom chart.
-                </p>
-                <p>
-                    Additionally, it features an AI-powered chat system that allows users to ask questions about how the site works or to inquire about product-related information, such as available stock, the most expensive product, and more.
-                </p>
-                <p>
-                    One of the main features is the scanner, which enables users to add or remove products from warehouses simply by scanning their barcodes.
-                </p>
+                  <p>
+                    {{getText(
+                      'Mi último proyecto es una aplicación web de gestión de productos donde los usuarios pueden tener múltiples almacenes con sus respectivos productos. Basado en los datos almacenados, se generan gráficos automáticamente, y gracias a la integración de inteligencia artificial, es posible crear cualquier tipo de gráfico personalizado.',
+                      'My latest project is a product management web application where users can have multiple warehouses with their respective products. Based on the stored data, charts are generated automatically, and thanks to the integration of artificial intelligence, it is possible to create any kind of custom chart.'
+                    )}}
+                  </p>
+                  <p>
+                    {{getText(
+                      'Además, cuenta con un sistema de chat potenciado por IA que permite a los usuarios hacer preguntas sobre cómo funciona el sitio o consultar información relacionada con los productos, como el stock disponible, el producto más caro y más.',
+                      'Additionally, it features an AI-powered chat system that allows users to ask questions about how the site works or to inquire about product-related information, such as available stock, the most expensive product, and more.'
+                    )}}
+                  </p>
+                  <p>
+                    {{getText(
+                      'Una de las principales características es el escáner, que permite a los usuarios añadir o eliminar productos de los almacenes simplemente escaneando sus códigos de barras.',
+                      'One of the main features is the scanner, which enables users to add or remove products from warehouses simply by scanning their barcodes.'
+                    )}}
+                  </p>
                 </div>
-                <button class="learnMoreButton" (click)="showHiddenCard('StockMaster')">Learn more</button>
+                <button class="learnMoreButton" (click)="showHiddenCard('StockMaster')">{{getText('Ver más', 'Learn more')}}</button>
 
                 <a href="https://github.com/Daani04/FinalProject.git" class="githubButton">
                   <svg
@@ -44,7 +52,7 @@
                       d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
                     ></path>
                   </svg>
-                  <span>See on GitHub</span>
+                  <span>{{getText('Ver en GitHub', 'See on GitHub')}}</span>
                 </a>
 
             </div>
@@ -55,19 +63,26 @@
             <div class="card-body">
               <h5 class="card-title">Alicia Estetica</h5>
                 <div class="card-text">
-                <p>
-                    This was a group project consisting of a website for an aesthetic clinic.  
-                    One of its main features is the product store, where administrators can add new products.
-                </p>
-                <p>
-                    It also includes a booking form that only allows selecting available days and times.  
-                    Once another user has booked an appointment with a professional at a specific date and time, that slot becomes unavailable.
-                </p>
-                <p>
-                    Finally, the homepage displays all the services offered by the clinic, organized clearly and accessibly for users.
-                </p>
+                  <p>
+                    {{getText(
+                      'Este fue un proyecto en grupo que consistió en un sitio web para una clínica estética. Una de sus características principales es la tienda de productos, donde los administradores pueden agregar nuevos productos.',
+                      'This was a group project consisting of a website for an aesthetic clinic. One of its main features is the product store, where administrators can add new products.'
+                    )}}
+                  </p>
+                  <p>
+                    {{getText(
+                      'También incluye un formulario de reserva que solo permite seleccionar días y horarios disponibles. Una vez que otro usuario haya reservado una cita con un profesional en una fecha y hora específicas, ese espacio se vuelve inaccesible.',
+                      'It also includes a booking form that only allows selecting available days and times. Once another user has booked an appointment with a professional at a specific date and time, that slot becomes unavailable.'
+                    )}}
+                  </p>
+                  <p>
+                    {{getText(
+                      'Finalmente, la página de inicio muestra todos los servicios que ofrece la clínica, organizados de manera clara y accesible para los usuarios.',
+                      'Finally, the homepage displays all the services offered by the clinic, organized clearly and accessibly for users.'
+                    )}}
+                  </p>
                 </div>
-                <button class="learnMoreButton" (click)="showHiddenCard('AliciaEstetica')">Learn more</button>
+                <button class="learnMoreButton" (click)="showHiddenCard('AliciaEstetica')">{{getText('Ver más', 'Learn more')}}</button>
 
                 <a href="https://github.com/seentry/Proyecto.git" class="githubButton">
                   <svg
@@ -81,7 +96,7 @@
                       d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
                     ></path>
                   </svg>
-                  <span>See on GitHub</span>
+                  <span>{{getText('Ver en GitHub', 'See on GitHub')}}</span>
                 </a>
             </div>
           </div>
@@ -92,17 +107,20 @@
             <div class="card-body">
               <h5 class="card-title">EcoBuddy</h5>
                 <div class="card-text">
-                <p>
-                    This project was developed as a team. It is a social network aimed at encouraging people to take positive actions for the environment.
-                </p>
-                <p>
-                    Users can join activities such as trash collection, tree planting, and many other community-driven initiatives. It also features a rewards system that motivates continued participation in these activities.
-                </p>
-                <p>
-                    The ultimate goal of this social network is to promote these kinds of actions and raise awareness about the importance of taking care of the environment.
-                </p>
+                  <p>
+                    {{getText('Este proyecto fue desarrollado en equipo. Es una red social orientada a incentivar a las personas a realizar acciones positivas para el medio ambiente.',
+                              'This project was developed as a team. It is a social network aimed at encouraging people to take positive actions for the environment.')}}
+                  </p>
+                  <p>
+                    {{getText('Los usuarios pueden unirse a actividades como recogida de basura, plantación de árboles y muchas otras iniciativas comunitarias. También cuenta con un sistema de recompensas que motiva a seguir participando en estas actividades.',
+                              'Users can join activities such as trash collection, tree planting, and many other community-driven initiatives. It also features a rewards system that motivates continued participation in these activities.')}}
+                  </p>
+                  <p>
+                    {{getText('El objetivo final de esta red social es promover este tipo de acciones y concienciar sobre la importancia de cuidar el medio ambiente.',
+                              'The ultimate goal of this social network is to promote these kinds of actions and raise awareness about the importance of taking care of the environment.')}}
+                  </p>
                 </div>
-                <button class="learnMoreButton" (click)="showHiddenCard('EcoBuddy')">Learn more</button>
+                <button class="learnMoreButton" (click)="showHiddenCard('EcoBuddy')">{{getText('Ver más', 'Learn more')}}</button>
 
                 <button class="githubButton disabled-link">
                   <svg
@@ -116,40 +134,82 @@
                       d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
                     ></path>
                   </svg>
-                  <span>See on GitHub</span>
+                  <span>{{getText('Ver en GitHub', 'See on GitHub')}}</span>
                 </button>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="row">
         @if (showProjectCard === "StockMaster") {
         <div class="col-md-12">
            <div class="card technologies-card">
             <div class="card-body" id="StockMasterInfo">
-              <h5 class="card-title">StockMaster -- Inventory Manager</h5>
-                <div class="card-text">
-                <p>
-                    This was my final project for DAW, to which I dedicated a lot of time and from which I learned a great deal. I used multiple libraries and APIs, and deepened my knowledge in technologies I was already familiar with, such as Angular and Symfony.
-                </p>
-                <p>
-                    A standout feature of this project is the use of AI. Thanks to this, I developed an intelligent notification panel that alerts the user to any issues—from simple errors like a misspelled name in the database to more critical problems like low stock or inconsistent prices. Additionally, I implemented a chatbot with access to all user data, capable of answering questions related to the products, as well as an AI-powered chart generation system. The user simply specifies the desired chart, and the system automatically generates it based on the stored data.
-                </p>
-                <p>
-                    For this project, I used the following technologies:
-                </p>
-                <ul>
-                    <li><strong>Symfony:</strong> I handled the backend, creating a RESTful API that connects with the frontend and manages all the logic and database interactions.</li>
-                    <li><strong>Angular:</strong> The entire frontend was developed in Angular. I used libraries such as <code>chart.js</code>, <code>zxing/ngx-scanner</code> for barcode scanning, <code>OpenLayers</code> for interactive maps, among others. I also integrated the DeepSeek API for AI functionalities.</li>
-                    <li><strong>HTML/CSS:</strong> Used to structure and style the interface components.</li>
-                    <li><strong>Bootstrap:</strong> Allowed me to quickly create a well-structured, responsive website.</li>
-                    <li><strong>AWS:</strong> I utilized AWS services to deploy and host the application in production.</li>
-                    <li><strong>MySQL:</strong> Used MySQL to create the database.</li>
-                </ul>
-                </div>
-              
+              <h5 class="card-title">StockMaster -- {{getText('Gestor de Inventario', 'Inventory Manager')}}</h5>
+
+            <div class="card-text">
+              <p>
+                {{getText(
+                  'Este fue mi proyecto final para DAW, al que dediqué mucho tiempo y del que aprendí enormemente. Utilicé múltiples librerías y APIs, y profundicé en tecnologías con las que ya estaba familiarizado, como Angular y Symfony.',
+                  'This was my final project for DAW, to which I dedicated a lot of time and from which I learned a great deal. I used multiple libraries and APIs, and deepened my knowledge in technologies I was already familiar with, such as Angular and Symfony.'
+                )}}
+              </p>
+              <p>
+                {{getText(
+                  'Una característica destacada de este proyecto es el uso de inteligencia artificial. Gracias a esto, desarrollé un panel de notificaciones inteligente que alerta al usuario sobre cualquier problema: desde errores simples como un nombre mal escrito en la base de datos hasta problemas más críticos como bajo stock o precios inconsistentes. Además, implementé un chatbot con acceso a todos los datos del usuario, capaz de responder preguntas relacionadas con los productos, así como un sistema de generación de gráficos impulsado por IA. El usuario simplemente especifica el gráfico deseado y el sistema lo genera automáticamente a partir de los datos almacenados.',
+                  'A standout feature of this project is the use of AI. Thanks to this, I developed an intelligent notification panel that alerts the user to any issues—from simple errors like a misspelled name in the database to more critical problems like low stock or inconsistent prices. Additionally, I implemented a chatbot with access to all user data, capable of answering questions related to the products, as well as an AI-powered chart generation system. The user simply specifies the desired chart, and the system automatically generates it based on the stored data.'
+                )}}
+              </p>
+              <p>
+                {{getText(
+                  'Para este proyecto, utilicé las siguientes tecnologías:',
+                  'For this project, I used the following technologies:'
+                )}}
+              </p>
+              <ul>
+                <li><strong>Symfony:</strong> 
+                  {{getText(
+                    'Me encargué del backend, creando una API RESTful que se conecta con el frontend y gestiona toda la lógica y las interacciones con la base de datos.',
+                    'I handled the backend, creating a RESTful API that connects with the frontend and manages all the logic and database interactions.'
+                  )}}
+                </li>
+                <li>
+                  <strong>Angular:</strong>
+                  <span
+                    [innerHTML]="getText(
+                      'Todo el frontend fue desarrollado en Angular. Utilicé librerías como <code>chart.js</code>, <code>zxing/ngx-scanner</code> para el escaneo de códigos de barras, <code>OpenLayers</code> para mapas interactivos, entre otras. También integré la API de DeepSeek para funcionalidades de inteligencia artificial.',
+                      'The entire frontend was developed in Angular. I used libraries such as <code>chart.js</code>, <code>zxing/ngx-scanner</code> for barcode scanning, <code>OpenLayers</code> for interactive maps, among others. I also integrated the DeepSeek API for AI functionalities.'
+                    )">
+                  </span>
+                </li>
+                <li><strong>HTML/CSS:</strong> 
+                  {{getText(
+                    'Usado para estructurar y estilizar los componentes de la interfaz.',
+                    'Used to structure and style the interface components.'
+                  )}}
+                </li>
+                <li><strong>Bootstrap:</strong> 
+                  {{getText(
+                    'Me permitió crear rápidamente un sitio web bien estructurado y responsivo.',
+                    'Allowed me to quickly create a well-structured, responsive website.'
+                  )}}
+                </li>
+                <li><strong>AWS:</strong> 
+                  {{getText(
+                    'Utilicé los servicios de AWS para desplegar y alojar la aplicación en producción.',
+                    'I utilized AWS services to deploy and host the application in production.'
+                  )}}
+                </li>
+                <li><strong>MySQL:</strong> 
+                  {{getText(
+                    'Usé MySQL para crear la base de datos.',
+                    'Used MySQL to create the database.'
+                  )}}
+                </li>
+              </ul>
+            </div>
+
             <div class="technologies-used">
                 <span class="badge me-2" style="background-color: #5bbbe1;">Symfony</span>         
                 <span class="badge me-2" style="background-color: #dd0031;">Angular</span>       
@@ -166,29 +226,77 @@
         } @else if (showProjectCard === "AliciaEstetica") {
             <div class="card technologies-card">
                 <div class="card-body" id="AliciaEsteticaInfo">
-                    <h5 class="card-title">Alicia Estética -- Sale of products and reservations</h5>
-                    <div class="card-text">
-                    <p>
-                        This was a group project we carried out for an aesthetic clinic. The main focus was to create a well-crafted and visually appealing frontend, as this was the client’s top priority.
-                    </p>
-                    <p>
-                        The website features a store section where users can purchase various available products. It also includes a booking section where you can select the service you want with the employee of your choice. Additionally, there are several informational pages explaining everything the clinic offers.
-                    </p>
-                    <p>
-                        The technologies used in this project were the following:
-                    </p>
-                    <ul>
-                        <li><strong>Symfony:</strong> Used to develop the backend, creating a RESTful API that connects to the database.</li>
-                        <li><strong>Angular:</strong> Responsible for the frontend of the application. In this case, we did not use any external libraries.</li>
-                        <li><strong>HTML/CSS:</strong> Used to structure and style the entire interface.</li>
-                        <li><strong>Bootstrap:</strong> Essential for making the website fully responsive, which was important since many users access it via mobile devices.</li>
-                        <li><strong>Docker:</strong> Used to run and contain the application during development.</li>
-                        <li><strong>Git:</strong> A crucial tool for team collaboration. Each member worked on their own branch and we integrated changes into <code>main</code>.</li>
-                        <li><strong>AWS:</strong> Used to deploy the application in the cloud.</li>
-                        <li><strong>MySQL:</strong> Used to manage all the data related to products, clients, and bookings.</li>
-                    </ul>
-                    </div>
-
+                    <h5 class="card-title">Alicia Estética -- {{ getText('Venta de productos y reservas', 'Sale of products and reservations') }}</h5>
+            <div class="card-text">
+              <p>
+                {{ getText(
+                  'Este fue un proyecto grupal que realizamos para una clínica estética. El enfoque principal fue crear un frontend bien elaborado y visualmente atractivo, ya que esta era la prioridad del cliente.',
+                  'This was a group project we carried out for an aesthetic clinic. The main focus was to create a well-crafted and visually appealing frontend, as this was the client’s top priority.'
+                ) }}
+              </p>
+              <p>
+                {{ getText(
+                  'El sitio web cuenta con una sección de tienda donde los usuarios pueden comprar diversos productos disponibles. También incluye una sección de reservas donde se puede seleccionar el servicio deseado con el empleado de preferencia. Además, hay varias páginas informativas que explican todo lo que ofrece la clínica.',
+                  'The website features a store section where users can purchase various available products. It also includes a booking section where you can select the service you want with the employee of your choice. Additionally, there are several informational pages explaining everything the clinic offers.'
+                ) }}
+              </p>
+              <p>
+                {{ getText(
+                  'Las tecnologías utilizadas en este proyecto fueron las siguientes:',
+                  'The technologies used in this project were the following:'
+                ) }}
+              </p>
+              <ul>
+                <li><strong>Symfony:</strong>
+                  {{ getText(
+                    ' Utilizado para desarrollar el backend, creando una API RESTful que se conecta a la base de datos.',
+                    ' Used to develop the backend, creating a RESTful API that connects to the database.'
+                  ) }}
+                </li>
+                <li><strong>Angular:</strong>
+                  {{ getText(
+                    ' Responsable del frontend de la aplicación. En este caso, no utilizamos bibliotecas externas.',
+                    ' Responsible for the frontend of the application. In this case, we did not use any external libraries.'
+                  ) }}
+                </li>
+                <li><strong>HTML/CSS:</strong>
+                  {{ getText(
+                    ' Utilizados para estructurar y dar estilo a toda la interfaz.',
+                    ' Used to structure and style the entire interface.'
+                  ) }}
+                </li>
+                <li><strong>Bootstrap:</strong>
+                  {{ getText(
+                    ' Fundamental para hacer que el sitio sea completamente responsive, lo cual era importante ya que muchos usuarios acceden desde dispositivos móviles.',
+                    ' Essential for making the website fully responsive, which was important since many users access it via mobile devices.'
+                  ) }}
+                </li>
+                <li><strong>Docker:</strong>
+                  {{ getText(
+                    ' Utilizado para ejecutar y contener la aplicación durante el desarrollo.',
+                    ' Used to run and contain the application during development.'
+                  ) }}
+                </li>
+                <li><strong>Git:</strong>
+                  <span [innerHTML]="getText(
+                    ' Una herramienta crucial para la colaboración en equipo. Cada miembro trabajó en su propia rama e integramos los cambios en <code>main</code>.',
+                    ' A crucial tool for team collaboration. Each member worked on their own branch and we integrated changes into <code>main</code>.'
+                  )"></span>
+                </li>
+                <li><strong>AWS:</strong>
+                  {{ getText(
+                    ' Utilizado para desplegar la aplicación en la nube.',
+                    ' Used to deploy the application in the cloud.'
+                  ) }}
+                </li>
+                <li><strong>MySQL:</strong>
+                  {{ getText(
+                    ' Utilizado para gestionar todos los datos relacionados con productos, clientes y reservas.',
+                    ' Used to manage all the data related to products, clients, and bookings.'
+                  ) }}
+                </li>
+              </ul>
+            </div>
                     <div class="technologies-used">
                     <span class="badge me-2" style="background-color: #5bbbe1;">Symfony</span>
                     <span class="badge me-2" style="background-color: #dd0031;">Angular</span>
@@ -202,30 +310,53 @@
                     </div>
                 </div>
                 </div>
+                
         } @else if(showProjectCard === "EcoBuddy") {
             <div class="card technologies-card">
             <div class="card-body" id="EcoBuddyInfo">
-                <h5 class="card-title">EcoBuddy -- Sustainable social network</h5>
-                <div class="card-text">
-                <p>
-                    EcoBuddy was a team project focused on developing a social network aimed at promoting environmentally friendly actions. 
-                    Users could share activities such as garbage collection, tree planting, and other sustainable initiatives.
-                </p>
-                <p>
-                    The platform featured a points system, where users earned points after completing each activity based on its duration and difficulty. 
-                    Additionally, trophies were implemented as a gamification method to encourage ongoing user participation.
-                </p>
-                <p>
-                    The technologies used in this project were:
-                </p>
-                <ul>
-                    <li><strong>PHP:</strong> The entire project was developed using pure PHP for both backend and frontend, without any frameworks.</li>
-                    <li><strong>HTML/CSS:</strong> Used to structure the page and apply custom styling.</li>
-                    <li><strong>Git:</strong> Each team member worked on their own branch, and changes were merged into the main branch.</li>
-                    <li><strong>Docker:</strong> Used to set up the development environment and run the application in an isolated container.</li>
-                    <li><strong>MySQL:</strong> The database was created using MySQL to store all necessary data.</li>
-                </ul>
-                </div>
+                <h5 class="card-title">EcoBuddy -- {{getText('Red social sostenible', 'Sustainable social network')}}</h5>
+            <div class="card-text">
+              <p>
+                {{getText(
+                  'EcoBuddy fue un proyecto en equipo centrado en desarrollar una red social destinada a promover acciones amigables con el medio ambiente. Los usuarios podían compartir actividades como recolección de basura, plantación de árboles y otras iniciativas sostenibles.',
+                  'EcoBuddy was a team project focused on developing a social network aimed at promoting environmentally friendly actions. Users could share activities such as garbage collection, tree planting, and other sustainable initiatives.'
+                )}}
+              </p>
+              <p>
+                {{getText(
+                  'La plataforma contaba con un sistema de puntos, donde los usuarios ganaban puntos tras completar cada actividad según su duración y dificultad. Además, se implementaron trofeos como método de gamificación para fomentar la participación continua de los usuarios.',
+                  'The platform featured a points system, where users earned points after completing each activity based on its duration and difficulty. Additionally, trophies were implemented as a gamification method to encourage ongoing user participation.'
+                )}}
+              </p>
+              <p>
+                {{getText(
+                  'Las tecnologías utilizadas en este proyecto fueron:',
+                  'The technologies used in this project were:'
+                )}}
+              </p>
+              <ul>
+                <li><strong>PHP:</strong> {{getText(
+                  'El proyecto completo fue desarrollado usando PHP puro tanto en backend como en frontend, sin frameworks.',
+                  'The entire project was developed using pure PHP for both backend and frontend, without any frameworks.'
+                )}}</li>
+                <li><strong>HTML/CSS:</strong> {{getText(
+                  'Se usó para estructurar la página y aplicar estilos personalizados.',
+                  'Used to structure the page and apply custom styling.'
+                )}}</li>
+                <li><strong>Git:</strong> {{getText(
+                  'Cada miembro del equipo trabajó en su propia rama, y los cambios se integraron en la rama principal.',
+                  'Each team member worked on their own branch, and changes were merged into the main branch.'
+                )}}</li>
+                <li><strong>Docker:</strong> {{getText(
+                  'Se utilizó para configurar el entorno de desarrollo y ejecutar la aplicación en un contenedor aislado.',
+                  'Used to set up the development environment and run the application in an isolated container.'
+                )}}</li>
+                <li><strong>MySQL:</strong> {{getText(
+                  'La base de datos se creó usando MySQL para almacenar todos los datos necesarios.',
+                  'The database was created using MySQL to store all necessary data.'
+                )}}</li>
+              </ul>
+            </div>
 
                 <div class="technologies-used">
                 <span class="badge me-2" style="background-color: #8892be;">PHP</span>
@@ -237,12 +368,8 @@
                 </div>
             </div>
             </div>
-
         }
-        
       </div>
-
     </div>
-   
   </div>
 </div>  

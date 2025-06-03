@@ -13,28 +13,28 @@
                     <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/about-me" routerLinkActive="active">About me</a>
+                    <a class="nav-link" routerLink="/about-me" routerLinkActive="active">{{getText('Sobre mi','About me')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link button-style" routerLink="/contact" routerLinkActive="active">Contact</a>
+                    <a class="nav-link" routerLink="/projects" routerLinkActive="active">{{getText('Proyectos','Projects')}}</a>
                 </li>
                 <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-link" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../../../../img/language.png" alt="">
-                    Seleccionar idioma
+                    {{getText('Idioma','Language')}}
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma">
                     <li>
-                        <a class="dropdown-item" href="#" data-lang="es" (click)="changueLenguage('es')">Español</a>
+                        <p class="dropdown-item" data-lang="es" (click)="toggleLanguage('es')">Español</p>
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="#" data-lang="en"  (click)="changueLenguage('en')">English</a>
+                        <p class="dropdown-item" data-lang="en"  (click)="toggleLanguage('en')">English</p>
                     </li>
                 </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link button-style" routerLink="/contact" routerLinkActive="active">{{getText('Contacto','Contact')}}</a>
                 </li>
             </ul>
         </div>
