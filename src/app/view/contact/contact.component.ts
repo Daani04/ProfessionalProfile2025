@@ -34,14 +34,23 @@
     });
 
     onSubmit() {
-      let affair = this.reactiveForm.value.affair;
-      let content = this.reactiveForm.value.content;
-      if (affair !== null && affair !== '' && content !== null &&  content !== '') {
+      const affair = this.reactiveForm.value.affair;
+      const content = this.reactiveForm.value.content;
+    
+      if (affair && content) {
+        // Enviar formulario 
+        const form = document.getElementById('contactForm') as HTMLFormElement;
+        form.submit();
+    
+        // Redireccionar a la pagina de confirmacion de envio 
         this.confirmationMailPage();
+        this.reactiveForm.reset();
       } else {
         this.invalidForm = true;
       }
     }
+    
+    
 
     public changueToGithubAnimated(): void {
       this.githubAnimated = true;

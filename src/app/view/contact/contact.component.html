@@ -4,7 +4,7 @@
 
     <h1>{{getText('Contáctame', 'Contact me')}}</h1>
 
-    <form id="contactForm" (submit)="onSubmit()" [formGroup]="reactiveForm" action="https://script.google.com/macros/s/AKfycbyTyzg9Teyg4dVyElNjLJr94GNiA6z4t53_Bzs8cueRap-BZef8Yip7mFN9cUi7ZErmrA/exec" method="POST" target="hiddenFrame">
+    <form id="contactForm" (submit)="onSubmit()" [formGroup]="reactiveForm" action="https://script.google.com/macros/s/AKfycbyTUUKOcZBw2fjUIVhf3xZbb0Y2rLYaNs2wR6PUzJW8vPQ2r9n9TB6LXFVkAerc4_zzOg/exec" method="POST" target="hiddenFrame">
         <div class="form-group mb-4">
             <label for="affair">{{getText('Asunto', 'Affair')}}</label>
             <input type="text" class="form-control" id="affair" name="affair" formControlName="affair" placeholder="{{getText('Ingrese asunto', 'Enter affair')}}" required>
