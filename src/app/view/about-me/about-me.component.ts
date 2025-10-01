@@ -71,6 +71,12 @@ export class AboutMeComponent implements AfterViewInit {
       position: 'left',
       active: false
     },
+    {
+      key: 'Java',
+      value: 'I have experience developing applications with Java, using object-oriented programming principles and applying best practices in software design and architecture.',
+      position: 'right',
+      active: false
+    },
   ];
 
   public allItemsSpa = [
@@ -114,6 +120,12 @@ export class AboutMeComponent implements AfterViewInit {
       key: 'AWS',
       value: 'Tengo experiencia desplegando aplicaciones en la nube usando servicios de AWS, especialmente instancias EC2. He configurado y gestionado servidores virtuales para alojar aplicaciones web.',
       position: 'left',
+      active: false
+    },
+    {
+      key: 'Java',
+      value: 'Tengo experiencia desarrollando aplicaciones con Java, utilizando principios de programación orientada a objetos y aplicando buenas prácticas en el diseño y la arquitectura del software.',
+      position: 'right',
       active: false
     },
   ];
